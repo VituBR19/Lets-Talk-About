@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Real Time Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <h1>Let's Talk About!</h1>
+
+    <div class="container">
+
+        <input type="text" id="username" autocomplete="off" required placeholder="Type your nickname">
+        
+        <div class="wrap action"></form>
+            <button id="create">
+                <img src="assets/images/create.png" alt="Create a room">
+                Create a room
+            </button>
+
+            <span>or</span>
+
+            <button id="search">
+                <img src="assets/images/search.png" alt="Search a room">
+                Search a room
+            </button>
+        </div>
+
+        <!-- Create a new room -->
+        <div class="wrap wrap-header create-room"></form>
+            <img class="back-home" src="assets/images/back.png" alt="Home">
+
+            <h3>Create a room</h3>
+
+            <input type="text" placeholder="Type the room name" class="room-name">
+
+            <button id="create-room-button" class="input">Go</button>
+        </div>
+
+        <!-- Search for a room -->
+        <div class="wrap wrap-header search-room"></form>
+            <img class="back-home" src="assets/images/back.png" alt="Home">
+            
+            <h3>Search a room</h3>
+
+            <input type="text" placeholder="Type the room name" id="typed-room">
+        </div>
+        
+        <div class="search-room">
+            <div class="chat-room">
+
+                <div class="chat-container">
+                    <!--Sent by backend-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

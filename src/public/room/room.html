@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Real Time</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <link rel="stylesheet" href="../room/room.css">
+</head>
+<body>
+
+    <h1>Let's Talk About!</h1>
+
+    <div class="container">
+        <h2 id="room-name"></h2>
+
+        <a href="../index.html" class="back-home">
+            <img src="../assets/images/home.png" alt="Go home">
+        </a>
+
+        <form id="chat">
+            <div class="messages">
+                <!-- Sent by server -->
+            </div>
+
+            <div class="send-message">
+                <input type="text" name="message" autocomplete="off" placeholder="Type your message">
+                <button type="submit">
+                    <img src="../assets/images/send.png" alt="Send Message">
+                </button>
+            </div>
+            
+        </form>
+
+        <div class="message"><strong></strong></div>
+    </div>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
